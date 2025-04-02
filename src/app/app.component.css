@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    margin-bottom: 10px;
+    width:35%;
+    background-color: teal;
+    justify-content: space-around;
+    text-align: center;
+
+
+  }
+  
+  .cell {
+    margin: 20%;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    font-size: 2em;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .result {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: green;
+  }
+  
