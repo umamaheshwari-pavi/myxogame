@@ -1,32 +1,45 @@
-.container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5px;
-    margin-bottom: 10px;
-    width:35%;
-    background-color: teal;
-    justify-content: space-around;
-    text-align: center;
+.xo-container{
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 5px;
+margin-bottom: 10px;
+width: 35%;
+background-color: violet;
+justify-content: space-around;
+text-align: center;
+margin: 2% auto;
+border-radius: 5px;
 
+}
 
-  }
-  
-  .cell {
-    margin: 20%;
+.cell{
+    background-color: darkblue;
     width: 100px;
     height: 100px;
-    background-color: lightblue;
-    font-size: 2em;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+    display: flex;
+    margin: 15% auto 15%;
+    color: aliceblue;
     text-align: center;
-    cursor: pointer;
-  }
-  
-  .result {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    color: green;
-  }
-  
+    font-size: xxx-large;
+    justify-content:center;
+    border-radius: 7px;
+
+}
+p{
+    text-align: center;
+    margin-top: 1%;
+    
+}
+button{
+    padding: 0.5%;
+}
+.cell:hover{
+    background-color: rgb(5, 56, 73);
+}
+button{
+    background-color:violet ;
+    padding: 1%;
+    color: darkblue;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

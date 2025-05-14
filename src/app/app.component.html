@@ -1,18 +1,9 @@
-<h2>XO Game</h2>
+<h1 style="text-align: center;">Let's play Xo-Game </h1>
+<div class="xo-container">
+    <div class="cell" *ngFor="let a of board; let i = index" (click)="makemove(i)" >{{a}}</div>
 
-
-<div class="container">
-  
-  <div  class="cell" *ngFor="let a of board; let i =index" (click)="makeMove(i)">
-    {{  a }}
-  </div>
-  
 </div>
+<h1 style="text-align: center;" class="result" *ngIf="winner">Player {{winner}} wins</h1>
 
-<div *ngIf="Winner" class="result">
-  
-  Player {{ Winner }} wins!
-  
-</div>
+<p > <button (click)="resetgame()">Reset Game</button> </p>
 
-<button (click)="resetGame()">Reset Game</button>
