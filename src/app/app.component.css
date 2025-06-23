@@ -1,45 +1,12 @@
-.xo-container{
-display: grid;
-grid-template-columns: auto auto auto;
-gap: 5px;
-margin-bottom: 10px;
-width: 35%;
-background-color: violet;
-justify-content: space-around;
-text-align: center;
-margin: 2% auto;
-border-radius: 5px;
-
+.mycolor{
+    background-color: rgb(110, 58, 93);
 }
-
-.cell{
-    background-color: darkblue;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    margin: 15% auto 15%;
-    color: aliceblue;
-    text-align: center;
-    font-size: xxx-large;
-    justify-content:center;
-    border-radius: 7px;
-
+.text-shadow {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
-p{
-    text-align: center;
-    margin-top: 1%;
-    
+.card-body:hover{
+    background-color: rgb(88, 67, 81);
 }
-button{
-    padding: 0.5%;
-}
-.cell:hover{
-    background-color: rgb(5, 56, 73);
-}
-button{
-    background-color:violet ;
-    padding: 1%;
-    color: darkblue;
-    border: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.mycolors{
+         background: linear-gradient(145deg, #b3738b, #4d755f);
 }

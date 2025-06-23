@@ -1,9 +1,27 @@
-<h1 style="text-align: center;">Let's play Xo-Game </h1>
-<div class="xo-container">
-    <div class="cell" *ngFor="let a of board; let i = index" (click)="makemove(i)" >{{a}}</div>
+<div class="container d-flex flex-column align-items-center justify-content-center min-vh-100 ">
+  <div><h1 class="text-center mb-3  display-4 text-shadow">Let's Play XO Game</h1></div>
 
+  <div class="row g-3 justify-content-center mt-3 " style="max-width: 360px;">
+    <div
+      class="col-4"
+      *ngFor="let a of board; let i = index"
+    >
+      <div
+        class="card text-black text-center text-shadow"  
+        [ngClass]="{'mycolor': !winner, 'bg-success': winner}"
+        style="aspect-ratio: 1/1; cursor: pointer; font-size: 2.5rem;"
+        (click)="makemove(i)"
+      >
+        <div class="card-body d-flex align-items-center justify-content-center">
+          {{ a }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="winner" class="alert alert-success mt-4 text-center w-50 mx-auto mycolors ">
+    <h1 class=" text-shadow  display-4" >{{ winner === 'No one its draw' ? winner : 'Player ' + winner + ' wins!' }}</h1>
+  </div>
+
+  <button class="btn btn-danger mt-3 px-4 py-2" (click)="resetgame()">Reset Game</button>
 </div>
-<h1 style="text-align: center;" class="result" *ngIf="winner">Player {{winner}} wins</h1>
-
-<p > <button (click)="resetgame()">Reset Game</button> </p>
-
